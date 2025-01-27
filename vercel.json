@@ -1,14 +1,9 @@
 {
   "version": 2,
   "builds": [
-    { "src": "editor.py", "use": "@vercel/python" },
-    {
-      "src": "app/static/scss/*.scss",
-      "use": "@vercel/static",
-      "config": {
-        "buildCommand": "python compile_scss.py"
-      }
-    }
+    { "src": "editor.py", "use": "@vercel/python" }
   ],
-  "routes": [{ "src": "/(.*)", "dest": "/editor.py" }]
+  "routes": [
+    { "src": "/(.*)", "dest": "/editor.py" }
+  ]
 }
