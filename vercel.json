@@ -4,6 +4,7 @@
     { "src": "editor.py", "use": "@vercel/python" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/editor.py" }
-  ]
+    { "src": "/(.*)", "dest": "editor.py" }
+  ],
+  "buildCommand": "flask assets build"
 }
