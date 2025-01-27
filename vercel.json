@@ -7,5 +7,8 @@
       "use": "@vercel/node"
     }
   ],
-  "routes": [{ "src": "/(.*)", "dest": "/editor.py" }]
+  "routes": [
+    { "src": "/(.*)", "dest": "/editor.py" },
+    { "src": "/static/(.*)", "dest": "/app/static/$1" }
+  ]
 }
