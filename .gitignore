@@ -1,3 +1,5 @@
 .env
 __pycache__
 /app/static/css/
+/app/static/.webassets-cache
+/app/static/dist
