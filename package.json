@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "sass app/static/scss:app/static/css"
+    "build": "echo 'Compiling SCSS...' && sass app/static/scss:app/static/css && echo 'SCSS Compilation Finished!'"
   },
   "devDependencies": {
     "sass": "^1.83.4"
