@@ -276,18 +276,19 @@
                     </div>
                     {% endfor %}
 
-                    <div class="row">
-                      {% for make, models in allcars.items() %}
-                          {% for model in models %}
-                          <div class="col-4 text-center">
-                              <h1><b>{{ make }}</b></h1>
-                              <h3>{{ make }}</h3>
-                              <h5>{{ model }}</h5>
-                              <img style="width: 410px; height: 230px;" src="{{ url_for('static', filename='D8/Cars/' + make + '_' + replace(model)) + '_IDAS8' + '.webp' }}">
-                          </div>
-                          {% endfor %}
-                      {% endfor %}
-                  </div>
+
+                    {% for make, models in allcars.items() %}
+                        {% for model in models %}
+                        <div class="col-4 text-center">
+                            <h3>{{ make }}</h3>
+                            <h5>{{ model }}</h5>
+                            <img style="width: 410px; height: 230px;" src="{{ url_for('static', filename='D8/Cars/' + make + '_' + replace(model)) + '_IDAS8' + '.webp' }}">
+                            <br/>
+                            <br/>
+                            <br/>
+                        </div>
+                        {% endfor %}
+                    {% endfor %}
 
                 </div>
             </div>
