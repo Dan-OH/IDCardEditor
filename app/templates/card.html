@@ -280,20 +280,10 @@
                       {% for make, models in allcars.items() %}
                           {% for model in models %}
                           <div class="col-4 text-center">
-                              <h1><b>{{ make }} CAR</b></h1>
+                              <h1><b>{{ make }}</b></h1>
                               <h3>{{ make }}</h3>
                               <h5>{{ model }}</h5>
                               <img style="width: 410px; height: 230px;" src="{{ url_for('static', filename='D8/Cars/' + make + '_' + replace(model)) + '_IDAS8' + '.webp' }}">
-                              <div class="bg-white rounded text-black p-1 car-license-plate">
-                                  <p class="justify-content-center align-items-center d-flex" style="margin-bottom: 0px;">
-                                      <span class="numplate-prefecture">Prefecture</span>
-                                      <span class="numplate-class-code">Code</span>
-                                  </p>
-                                  <p class="justify-content-center align-items-center d-flex" style="margin-bottom: 0px;">
-                                      <span class="numplate-hirigana">Hiragana</span>
-                                      <span class="numplate-plate-number">1234</span>
-                                  </p>
-                              </div>
                           </div>
                           {% endfor %}
                       {% endfor %}
